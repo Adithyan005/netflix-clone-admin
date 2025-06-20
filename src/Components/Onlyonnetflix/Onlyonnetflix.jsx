@@ -17,16 +17,6 @@ const Onlyonnetflix = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     try {
-      setImage(""),
-      setName(""),
-      setYear(""),
-      setDuration(""),
-      setDirector(""),
-      setCast(""),
-      setWriters(""),
-      setRating(""),
-      setDescription(""),
-      setTrailerurl("")
       await axios.post(
         "https://netflix-clone-backend-vas2.onrender.com/api/flix/onlynetflix",
         {
